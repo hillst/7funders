@@ -52,10 +52,10 @@ class Card():
         self.__params__ =["name", "cardtype", "age", "cost", "card_text", "upgrades", "players"]
 
     def on_build(self):
-        raise Exception("Not implemented error. Do not instantiate this class")
+        print "ahhh base class\r",
 
     def score(self):
-        raise Exception("Not implemented error. Do not instantiate this class")
+        print "ahh base class\r",
 
     def deepcopy(self):
         copy_costs = deepcopy(self.costs)
@@ -118,7 +118,7 @@ class CivilianCard(Card):
     def score(self):
         return self.vp
 
-    def on_build(self): pass
+    def on_build(self): pass #player?
 
 class CommerceCard(Card):
     def __init__(self, **kwargs):
@@ -130,9 +130,26 @@ class MilitaryCard(Card):
         pass
 
 class GuildCard(Card):
+    # We really have two types of guild cards, scoring cards and board effect cards,
+    #     an open question is how to capture this properly, such that its easy to extend
+    #     python sippets would be intersting as card text
+    #    Commerce-1VP-LR
     def __init__(self, **kwargs):
         Card.__init__(self, **kwargs)
-        pass
+        #if it is the kind we want it to be, do the following
+        if self.name != "Scientists Guild":
+            how, what, self.where = self.card_text.split("-")
+            self.whats = how.split(";") #one is VP one is MP
+            self.hows = what.split("|") #should be card types, wonders, or LossBell
+            #where = "LMR" are possible
+
+    def score(self):
+        if self.name != "Scientists Guild":
+            pass
+            #wait how do we score if we dont have player information what the fuck
+        #if self.whats:
+        
+        
 
 class ScienceCard(Card):
     def __init__(self, **kwargs):
@@ -147,6 +164,9 @@ class ManufacturedCard(Card):
 class NaturalCard(Card):
     def __init__(self, **kwargs):
         Card.__init__(self, **kwargs)
+
+    def on_build(self, player):
+        #how do we define that weird or relationship
         pass
 
 
@@ -166,13 +186,19 @@ def card_parser(filename="Cards.csv"):
              upgrades,players,meta = line.strip().split(",")
         costs = map(int, [c_gold, c_brick, c_stone, c_ore, c_wood, c_glass, c_paper, c_silk])
         
-        #if cardtype == "Civilian":
+        card = None
+        if cardtype == "Civilian":
+            card = CivilianCard(name=name,cardtype=cardtype,age=int(age), costs = costs,   \
+                           card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
+                           players=map(int, players.split("-")))
+        else:
+            card = Card(name=name, cardtype=cardtype, age=int(age), costs = costs,         \
+                           card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
+                           players=map(int, players.split("-"))) 
             
+        cards.append(card)     
 
 
-        cards.append( Card(name=name, cardtype=cardtype, age=int(age), costs = costs,       \
-                           card_text=c_text, upgrades=upgrades.split(','), meta = meta,     \
-                           players=map(int, players.split("-"))) )
         
         #this just setups a set of card objects, not great for data science
     return cards

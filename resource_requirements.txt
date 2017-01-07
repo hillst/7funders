@@ -1,0 +1,33 @@
+These are general notes about resource requirements
+
+
+1) we are could  use search
+2) search strategy is follows: 
+    init state with all of our free and absolute resources
+
+    If we have relevant exclusive resources, we need to make them independent edges.
+
+    for each "exclusive" resource (
+        check relevancy
+        add node
+    ^^exit this node if above happened ^^
+
+    for west optional resources that i can purcahse
+        check relevancy
+        add node
+    ^^exit this node if above happened ^^
+
+    for east optional resources that i can purchase
+        check relevancy
+        add node
+    ^^exit this node if above happened ^^
+
+
+    for west resources that i can purchase
+        check relevancy
+        add node
+
+
+    for east resources that i can purchase
+        check relevancy
+        add node

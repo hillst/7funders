@@ -13,6 +13,7 @@ class State():
         self.players = players
         self.age_decks = [Age1Deck(len(players)),Age2Deck(len(players)),Age3Deck(len(players))]
         self.is_over = False
+        self.discard = []
 
     def deal(self):
         """
@@ -47,6 +48,7 @@ class State():
 
 
     def get_legal_actions(agent):
+        #is this where we get all the terminal nodes from the search?
         return []
         pass
 
@@ -60,6 +62,14 @@ class State():
     def get_current_pick(self): return self.current_pick
 
     def set_current_pick(self, pick): self.current_pick_num = pick
+
+    def get_player_west_east(self,player_idx):
+      """
+      returns the player and the players west/east neighbors
+      """
+      i = player_idx
+      w, e = (i-1) % (len(self.players) -1), (i+1) % (len(self.players)-1)
+      return self.players[player_idx], self.players[w], self.players[e]
 
     def age_generator(self):
         for i in range(1,4):

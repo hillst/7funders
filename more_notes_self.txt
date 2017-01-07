@@ -1,0 +1,11 @@
+ok so we are just rolling with the tree and assuming the intractable states will never be reached.
+
+So, in our simulation, we are going to get legal actions for each player.
+These are:
+    trash card action (+3 gold)
+    build wonder action
+    build pick action
+
+the two build actions
+    take the action, generate the nodes, take the terminal nodes and build 
+        actions from them.
