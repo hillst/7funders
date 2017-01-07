@@ -8,17 +8,17 @@ import numpy as np
 
 
 class node():
-    def __init__(self, shopping_list, player,  west, east, meta={}, smart_prune=True):
+    def __init__(self, shopping_list, player,  west, east, meta={}, payments_west=0, payments_east=0, smart_prune=True):
         self.shopping_list = shopping_list
         self.edges = []
         self.west = west
         self.east = east
         self.meta = meta
         self.player = player
-        self.payments_west = 0
-        self.payments_east = 0
-        WEST_IDX = 1
-        EAST_IDX = 2
+        self.payments_west = payments_west
+        self.payments_east = payments_east
+        WEST_IDX = 0
+        EAST_IDX = 1
         self.shopping_list.clip(min=0)
 
         self.names = ["gold/currency", "brick" ,"stone" ,"ore", "wood", "glass","paper", "silk"]
@@ -70,7 +70,9 @@ class node():
                         new_node = node(shopping_list_clone, *search_copy,      \
                                         meta={"label": "person: " + ["player","west","east"][k]\
                                               +" optional " + str_options(options)}, \
-                                              smart_prune = smart_prune)
+                                              smart_prune = smart_prune, \
+                                              payments_west = self.payments_west, \
+                                              payments_east = self.payments_east)
                         self.edges.append(new_node)
                 if len(self.edges) > 0: return #first only consider our options
 
@@ -105,11 +107,9 @@ class node():
                     
                     new_node = node(shopping_list_clone, player, *neighbor_clone,\
                                  meta={"label":"Purchase " + ["west","east"][k] \
-                                 + " resource: " + self.names[i]}, smart_prune=smart_prune ) 
-                    if k == WEST_IDX: 
-                      new_node.payments_west+=1
-                    else:
-                      new_node.payments_east+=1
+                                 + " resource: " + self.names[i]}, smart_prune=smart_prune,\
+                                 payments_west = self.payments_west + (k == WEST_IDX),\
+                                 payments_east = self.payments_east + (k == EAST_IDX) ) 
                     self.edges.append( new_node ) 
    
 
@@ -241,11 +241,11 @@ def test_xor_me():
 
     # anyway now we should see how this works with the game itself
     need = [3,2,3,4,1,1,1] 
-    need = [1,0,0,0,0,0,1] 
-    p1resources = [1,1,0,1,1,1,1] 
-    p1xor_resources = [ [0,0,0,0,1,0,0], [1,1,1,1,0,0,0], [1,1,0,0,0,0,0] ]
-    west_resources = [1,1,1,1,1,1,1] 
-    east_resources = [1,1,1,1,1,1,1] 
+    need = np.asarray([0,0,2,0,0,0,0,1])
+    p1resources = np.asarray([21,1,0,1,1,1,1])
+    p1xor_resources = [ [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0] ]
+    west_resources = np.asarray([1,1,0,1,1,1,1,1] )
+    east_resources = np.asarray([1,1,2,1,1,1,1,0]) 
 
     """
     need = [0,0,0,0,0,0,4] 
@@ -264,7 +264,8 @@ def test_xor_me():
         graph = node(shopping_list=need, player=cur_player, west=west, east=east, smart_prune=True)
         print time.time() - start
 
-    print graph.get_terminal_nodes()
+    print graph.get_terminal_nodes() 
+    print generate_build_actions(graph)
 
     nodes = get_nodes(graph)
     edges = get_edges(graph)

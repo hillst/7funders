@@ -26,7 +26,10 @@ Type
 """
 from termcolor import colored
 from copy import copy, deepcopy
-int_to_resource =  dict(zip(("gold", "clay",  "stone", "ore", "wood", "glass", "paper", "silk"), range(8)))
+import numpy as np
+int_to_resource =  dict(zip(range(8), ("gold", "clay",  "stone", "ore", "wood", "glass", "paper", "silk")))
+
+resource_to_int = dict( zip(("gold", "clay",  "stone", "ore", "wood", "glass", "paper", "silk"), range(8)))
 
 
 class Card():
@@ -51,7 +54,11 @@ class Card():
         self.meta = meta
         self.__params__ =["name", "cardtype", "age", "cost", "card_text", "upgrades", "players"]
 
-    def on_build(self):
+    def on_build(self, player):
+        """
+        All cards require a player argument so we know who to apply the effect to :)
+        """
+        print "why"
         print "ahhh base class\r",
 
     def score(self):
@@ -59,8 +66,9 @@ class Card():
 
     def deepcopy(self):
         copy_costs = deepcopy(self.costs)
-        new_obj = Card(self.name, self.cardtype, self.age, copy_costs, \
-                      self.card_text, self.upgrades, self.players, self.meta)
+        new_obj = (Card(name=self.name, cardtype=self.cardtype, age=self.age, 
+                               costs=copy_costs, card_text=self.card_text, 
+                               upgrades=self.upgrades, players=self.players, meta=self.meta))
         return new_obj
         
     
@@ -117,8 +125,16 @@ class CivilianCard(Card):
 
     def score(self):
         return self.vp
+    
+    def deepcopy(self):
+        copy_costs = deepcopy(self.costs)
+        new_obj = (CivilianCard(name=self.name, cardtype=self.cardtype, age=self.age, 
+                               costs=copy_costs, card_text=self.card_text, 
+                               upgrades=self.upgrades, players=self.players, meta=self.meta))
+        return new_obj
+        
 
-    def on_build(self): pass #player?
+    def on_build(self, player): pass 
 
 class CommerceCard(Card):
     def __init__(self, **kwargs):
@@ -164,10 +180,40 @@ class ManufacturedCard(Card):
 class NaturalCard(Card):
     def __init__(self, **kwargs):
         Card.__init__(self, **kwargs)
+        parsed = self.card_text.split(" ")
 
     def on_build(self, player):
         #how do we define that weird or relationship
-        pass
+        """ 
+        Stone OR Wood, Stone AND Stone, Stone
+        """
+        arr = self.card_text.split(" ")
+        to_add = [0,0,0,0 ,0,0,0,0]
+        if len(arr) > 1:
+          boolean = arr[1]
+          res = (arr[0].lower(), arr[2].lower())
+          to_add[resource_to_int[res[0]]] += 1
+          to_add[resource_to_int[res[1]]] += 1
+        else:
+          boolean = None
+          to_add[resource_to_int[arr[0].lower()]] += 1
+
+        to_add = np.asarray(to_add)
+        if boolean == "OR":
+          player.xor_resources.append(to_add)
+        else:
+          player.resources += to_add
+    
+    def deepcopy(self):
+        """
+        >>>> We were working on this, the bug is we need to put the kewyrods in for it to work.
+              after that things should work and we are checking to see that the resources changed for each player<<<<<
+        """
+        copy_costs = deepcopy(self.costs)
+        new_obj = (NaturalCard(name=self.name, cardtype=self.cardtype, age=self.age, 
+                               costs=copy_costs, card_text=self.card_text, 
+                               upgrades=self.upgrades, players=self.players, meta=self.meta))
+        return new_obj
 
 
 def card_parser(filename="Cards.csv"):
@@ -191,11 +237,15 @@ def card_parser(filename="Cards.csv"):
             card = CivilianCard(name=name,cardtype=cardtype,age=int(age), costs = costs,   \
                            card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
                            players=map(int, players.split("-")))
+        elif cardtype == "Natural resource":
+            card = NaturalCard(name=name,cardtype=cardtype,age=int(age), costs = costs,   \
+                           card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
+                           players=map(int, players.split("-")))
         else:
             card = Card(name=name, cardtype=cardtype, age=int(age), costs = costs,         \
                            card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
                            players=map(int, players.split("-"))) 
-            
+        print card.__class__ 
         cards.append(card)     
 
 

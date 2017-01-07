@@ -101,7 +101,6 @@ class Simulator():
                 #for instance, we want the score function to know,
                 # B R G 1VP is 1 VP for each BRG that we have, how what where,
                 # how (what card types), what (how many vp), where (which neighbors)
-        pass 
     
     def is_terminal_state(self):
         # is the game over?
@@ -120,7 +119,7 @@ class Simulator():
         """
         What does this entail? -- get the number of players, build the card decks
         """
-        self.state = State.State(players=[Player.Player("Player" + str(i+1), resources="rand") for i in range(n_players)])
+        self.state = State.State(players=[Player.Player("Player" + str(i+1) ) for i in range(n_players)])
         self._deal_pass_packs()
 
     def _deal_pass_packs(self):

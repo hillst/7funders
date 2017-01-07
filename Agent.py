@@ -12,7 +12,10 @@ class RandomAgent(Agent):
         pass
         
     def select_action(self, state, legal_actions=[]):
-        return choice(legal_actions)
+        if len(legal_actions) > 1:
+          return choice(legal_actions[1:])
+        else:
+          return legal_actions[0]
     
     def __str__(self):
         return "RandomAgent"

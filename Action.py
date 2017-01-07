@@ -48,6 +48,10 @@ class BuildPayMockAction(Action):
         #get the card index
         card = player.current_hand[self.card_idx]
         player.structures.append(card)
+        card.on_build(player)
+        print "take actoin!!!!"
+        print card.cardtype, card.card_text, 
+        print card.__class__
         del player.current_hand[self.card_idx]
 
     def __str__(self):
