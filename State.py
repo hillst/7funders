@@ -70,6 +70,16 @@ class State():
       i = player_idx
       w, e = (i-1) % (len(self.players) -1), (i+1) % (len(self.players)-1)
       return self.players[player_idx], self.players[w], self.players[e]
+    
+    def get_player_idx_west_east(self,player_idx):
+      """
+      Returns player index, west index, east index.
+
+      seealso get_player_west_east
+      """
+      i = player_idx
+      w, e = (i-1) % (len(self.players) -1), (i+1) % (len(self.players)-1)
+      return player_idx, w, e
 
     def age_generator(self):
         for i in range(1,4):
@@ -78,8 +88,12 @@ class State():
 
 
     def pick_generator(self):
-        #alternatively
-        for i in range(self.get_pack_size()):
+        """
+        We actually need to make 3 equally sized packs so we probably shouldnt use this.
+
+        -1 because we trash the last card.
+        """
+        for i in range(self.get_pack_size() - 1): #packsize = 21, 21/3 = 7, 7 - 1 = 6
             yield i + 1
 
     def get_pack_size(self):
@@ -91,6 +105,10 @@ class State():
     def next_age(self):
         self.current_age+=1
         if self.current_age > 3: self.current_age=3
+        for pack in self.packs:
+          self.discard += [item for item in pack]
+        self.packs = [[] for pack in self.packs]
+          
 
     def copy(self):
         print "WARNING COPY DOES NOTHING IN state.py"

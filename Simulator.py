@@ -1,6 +1,6 @@
 import Player, State
 from Action import BuildPayMockAction, PayMockAction, TrashMockAction
-from Agent import RandomAgent
+from Agent import RandomAgent, BuildFirstAgent
 from ResourceChecker import node, generate_build_actions
 
 def test():
@@ -12,8 +12,7 @@ def test():
 
     N_PLAYER = 3
     print "setting up game..."
-    game = Simulator(agents=[RandomAgent() for _ in range(N_PLAYER)]) 
-        
+    game = Simulator(agents=[BuildFirstAgent() for _ in range(N_PLAYER)]) 
     print "starting age loop"
 
     for i in game.get_state().age_generator(): 
@@ -26,21 +25,23 @@ def test():
             for i, agent in enumerate(game.agents):
                 action = agent.select_action(game.get_state(), legal_actions[i])
                 action_queue.append(action)
+                print "Player {}".format(i)
+                print "Takes action"
+                print action
 
             for action in action_queue: 
-                print action
                 action.take_action()
           
             game.pass_packs()
-
+        print "At end of age", i + 1
+        for player in game.get_state().players:
+            print player
+            print "Structures:"
+            for s in sorted(player.structures, key=lambda x : x.cardtype , reverse=True): #cards
+                print s 
         game.get_state().next_age()
         game._deal_pass_packs()
 
-    for player in game.get_state().players:
-        print player
-        print "Structures:"
-        for s in sorted(player.structures, key=lambda x : x.cardtype , reverse=True): #cards
-            print s 
         
 
     """
@@ -121,11 +122,14 @@ class Simulator():
         """
         self.state = State.State(players=[Player.Player("Player" + str(i+1) ) for i in range(n_players)])
         self._deal_pass_packs()
+        print "dealing and passing.."
 
     def _deal_pass_packs(self):
+        """
+        Should this really be in the simulator?
+        """
         self.state.deal()
         #build decks
-        
         for i,  p in enumerate(self.state.players):
             p.current_hand = self.state.packs[i]
     
@@ -136,6 +140,8 @@ class Simulator():
 
         get_legal_actions - returns a 2d list of legal actions. The list is:
             (n_player x var), we have a list of legal actions for each player!
+
+        "which player?"
         """
         legal_actions = []
         for i, player in enumerate(state.players):
@@ -147,6 +153,7 @@ class Simulator():
             w, e = (i-1) % (len(state.players) -1), (i+1) % (len(state.players)-1)
             west,  east = state.players[w], state.players[e]
             for idx, card in enumerate(player.current_hand):
+                if card in player.structures: continue
                 #ok this needs some work i think 
                 shopping_list =  card.costs - player.resources
                 shopping_list = shopping_list.clip(min=0)

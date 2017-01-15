@@ -36,6 +36,7 @@ class BuildPayMockAction(Action):
         self.player_idx = player_idx
         self.card_idx = card_idx
         self.player, self.west, self.east = self.state.get_player_west_east(self.player_idx)
+        self.card = self.player.current_hand[self.card_idx]
   
     def take_action(self):
         player, west, east = self.state.get_player_west_east(self.player_idx)
@@ -49,10 +50,10 @@ class BuildPayMockAction(Action):
         card = player.current_hand[self.card_idx]
         player.structures.append(card)
         card.on_build(player)
-        print "take actoin!!!!"
-        print card.cardtype, card.card_text, 
-        print card.__class__
         del player.current_hand[self.card_idx]
+
+    def get_card_type(self):
+        return self.card.cardtype
 
     def __str__(self):
         _str = "=======BUILD ACTION======="  + "\n"

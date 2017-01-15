@@ -17,6 +17,8 @@ class node():
         self.player = player
         self.payments_west = payments_west
         self.payments_east = payments_east
+        #get player discounts
+        self.discounted_resources = player.discounted_resources
         WEST_IDX = 0
         EAST_IDX = 1
         self.shopping_list.clip(min=0)
@@ -39,7 +41,7 @@ class node():
                     for j, option in enumerate(options):
                         if option == 0: continue
                         if self.shopping_list[j] == 0: continue
-                        if k > 0 and player.resources[0] <= 0: continue # cannot afford other players resources
+                        if k > 0 and player.resources[0] < 2: continue # cannot afford other players resources
                         p_clone = deepcopy(p)
                         p_clone.xor_resources.pop(i)
                         shopping_list_clone = deepcopy(shopping_list)
@@ -81,7 +83,7 @@ class node():
             ######################
             neighbors = (deepcopy(west), deepcopy(east)) #make player objects copy be deepcopy by default.
             for k, neighbor in enumerate(neighbors):
-                if player.resources[0] <= 0: break #player cannot buy.
+                if player.resources[0] < 2: break #player cannot buy.
                 for i, resource in enumerate( neighbor.resources ):
                     if i == 0: continue #cannot trade for gold (trading takes gold...)
                     if resource == 0: continue #player doesnt have that resource
@@ -108,8 +110,8 @@ class node():
                     new_node = node(shopping_list_clone, player, *neighbor_clone,\
                                  meta={"label":"Purchase " + ["west","east"][k] \
                                  + " resource: " + self.names[i]}, smart_prune=smart_prune,\
-                                 payments_west = self.payments_west + (k == WEST_IDX),\
-                                 payments_east = self.payments_east + (k == EAST_IDX) ) 
+                                 payments_west = self.payments_west + (k == WEST_IDX)*2,\
+                                 payments_east = self.payments_east + (k == EAST_IDX)*2 ) 
                     self.edges.append( new_node ) 
    
 
@@ -208,6 +210,11 @@ def get_edges(node):
         pairs += get_edges(edge)
 
     return pairs
+
+def can_trade(node):
+    """
+    Theoretical function that accepts a node and returns if the player can pay for the item or not.
+    """
     
 def add_nodes(graph, nodes): #graph object, then this list, tuple dictionary thing.
     """

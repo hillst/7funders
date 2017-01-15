@@ -58,7 +58,6 @@ class Card():
         """
         All cards require a player argument so we know who to apply the effect to :)
         """
-        print "why"
         print "ahhh base class\r",
 
     def score(self):
@@ -102,6 +101,10 @@ class Card():
             return self.cardtype > other.cardtype
         else:
             return self.name > other.name
+
+    def __eq__(self, other):
+        return self.name == other.name
+          
 
     def n_instances(self, n_players=3):
         """
@@ -245,7 +248,6 @@ def card_parser(filename="Cards.csv"):
             card = Card(name=name, cardtype=cardtype, age=int(age), costs = costs,         \
                            card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
                            players=map(int, players.split("-"))) 
-        print card.__class__ 
         cards.append(card)     
 
 
