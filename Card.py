@@ -137,11 +137,69 @@ class CivilianCard(Card):
         return new_obj
         
 
-    def on_build(self, player): pass 
+    def on_build(self, player):
+        print "building Civilian Card"
 
 class CommerceCard(Card):
     def __init__(self, **kwargs):
-        pass
+       Card.__init__(self, **kwargs)
+
+    def on_build(self, player):
+      print "CommerceCard class"
+    
+    def deepcopy(self):
+        copy_costs = deepcopy(self.costs)
+        new_obj = (CommerceCard(name=self.name, cardtype=self.cardtype, age=self.age, 
+                               costs=copy_costs, card_text=self.card_text, 
+                               upgrades=self.upgrades, players=self.players, meta=self.meta))
+        return new_obj
+
+    
+
+class CommerceMarketCard(CommerceCard):
+    """
+    What about the case where it is a fixed bonus? the level 2 markets are like this.
+    I think we can just have another class nbd
+
+    Tavern,Commerce,1,0,0,0,0,0,0,0,0,5G,,4-5-7,
+    East Trading Post,Commerce,1,0,0,0,0,0,0,0,0,PurchaseNatural-R,,3-7,
+    West Trading Post,Commerce,1,0,0,0,0,0,0,0,0,PurchaseNatural-L,,3-7,
+    Marketplace,Commerce,1,0,0,0,0,0,0,0,0,PurchaseManufactured-LR,,3-6,
+    """
+    def __init__(self, **kwargs):
+      CommerceCard.__init__(self, **kwargs)
+      self.purchase_from = self.card_text.split("-")[1]
+      self.purchase_what = self.card_text.split("-")[0].strip("Purchase")
+       
+
+    def on_build(self, player):
+
+        zeroes = [0,0,0,0, 0,0,0,0] 
+        if self.purchase_what == "Natural":
+          to_add = [0,1,1,1, 1,0,0,0]
+        elif self.purchase_what == "Manufactured":
+          to_add = [0,0,0,0, 0,1,1,1]
+        else:
+          raise Exception("Trying to build invalid market type. This should not happen so please dont")
+        #so there is a case where we have both
+        if "L" == self.purchase_from:
+          player.discounted_resources[0].append(to_add) 
+          player.discounted_resources[0].append(zeroes)
+        elif "R" == self.purchase_from:
+          player.discounted_resources[1].append(to_add)
+          player.discounted_resources[1].append(zeroes)
+        elif "LR" == self.purchase_from:
+          player.discounted_resources[0].append(to_add)
+          player.discounted_resources[1].append(to_add)
+
+    def deepcopy(self):
+        copy_costs = deepcopy(self.costs)
+        new_obj = (CommerceMarketCard(name=self.name, cardtype=self.cardtype, age=self.age, 
+                               costs=copy_costs, card_text=self.card_text, 
+                               upgrades=self.upgrades, players=self.players, meta=self.meta))
+        return new_obj
+            
+
 
 class MilitaryCard(Card):
     def __init__(self, **kwargs):
@@ -243,7 +301,17 @@ def card_parser(filename="Cards.csv"):
         elif cardtype == "Natural resource":
             card = NaturalCard(name=name,cardtype=cardtype,age=int(age), costs = costs,   \
                            card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
-                           players=map(int, players.split("-")))
+                           players=map(int, players.split("-")))  
+        elif cardtype == "Commerce":
+            if "Purchase" in c_text:
+              card = CommerceMarketCard(name=name,cardtype=cardtype,age=int(age),costs=costs, \
+                             card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \
+                             players=map(int, players.split("-")))
+
+            else:
+              card = CommerceCard(name=name,cardtype=cardtype,age=int(age),costs=costs,       \
+                             card_text=c_text, upgrades=upgrades.split(','), meta = meta,   \
+                             players=map(int, players.split("-")))
         else:
             card = Card(name=name, cardtype=cardtype, age=int(age), costs = costs,         \
                            card_text=c_text, upgrades=upgrades.split(','), meta = meta,    \

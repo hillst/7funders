@@ -38,6 +38,7 @@ def test():
             print player
             print "Structures:"
             for s in sorted(player.structures, key=lambda x : x.cardtype , reverse=True): #cards
+                print s.cardtype,
                 print s 
         game.get_state().next_age()
         game._deal_pass_packs()
@@ -162,6 +163,7 @@ class Simulator():
                 if max(shopping_list) <= 0:
                   player_actions.append(BuildPayMockAction(state, player_idx=i, card_idx=idx))
                 else:
+                  #TODO add the players discounted resources here
                   graph = node(shopping_list, player, west, east, smart_prune=True)
                   pay_poss = generate_build_actions(graph) 
                   for payment in pay_poss:
@@ -178,8 +180,6 @@ class Simulator():
         #important that we make a deep copy
         pass
 
-
-    #why am i writing this in python this shit is  gon be too slow to do anything.... write it in a way that is easy to translate to c++
 
 
     

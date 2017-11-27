@@ -26,7 +26,7 @@ class Player():
         self.starting_gold = starting_gold
 
         if discounted_resources == None:
-          self.discounted_resources = [[],[]] #list of west,both,east -- may not hold up because there arent really "both" cards.
+          self.discounted_resources = [[],[]] #list of west,east 
         else:
           self.discounted_resources = discounted_resources
 
@@ -66,7 +66,12 @@ class Player():
         return self.__copy__()
 
     def __str__(self):
+        #this could be much prettier.
         return (self.name + "\nGold:" + str(self.resources[0]) + 
                             "\nResources:" + "\t".join(names) + 
-                            "\n\t" + "\t".join( map(str,self.resources[1:])))
+                            "\n\t" + "\t".join( map(str,self.resources[1:])) +
+                            "\nMarkets:" + "\t".join(names) + 
+                            "\n\t"+"Left:\t".join( map(str,self.discounted_resources[0][1:]))+
+                            "\n\t"+"Right:\t".join( map(str,self.discounted_resources[1][1:])))
+    
 

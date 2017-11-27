@@ -58,6 +58,7 @@ class BuildPayMockAction(Action):
     def __str__(self):
         _str = "=======BUILD ACTION======="  + "\n"
         _str += self.player.current_hand[self.card_idx].__str__() + "\n"
+        _str += str(self.player.current_hand[self.card_idx].__class__) + "\n"
         _str += "Player" + str(self.player_idx) + "\n"
         _str += "Purchases: " +  "-".join(map(str,self.pay))  + "\n"
         return _str

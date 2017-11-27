@@ -9,6 +9,10 @@ import numpy as np
 
 class node():
     def __init__(self, shopping_list, player,  west, east, meta={}, payments_west=0, payments_east=0, smart_prune=True):
+        #TODO: need to put in the discounted resources argument and update everything
+        #   discounted_resources comes from the player object
+        #   we are actually updating it as we build the graph so we need to make sure its cloned
+        #   and taken care of.
         self.shopping_list = shopping_list
         self.edges = []
         self.west = west
@@ -17,8 +21,7 @@ class node():
         self.player = player
         self.payments_west = payments_west
         self.payments_east = payments_east
-        #get player discounts
-        self.discounted_resources = player.discounted_resources
+        self.discounted_resources = player.discounted_resources #we dont really have a plan here yet
         WEST_IDX = 0
         EAST_IDX = 1
         self.shopping_list.clip(min=0)
@@ -41,7 +44,7 @@ class node():
                     for j, option in enumerate(options):
                         if option == 0: continue
                         if self.shopping_list[j] == 0: continue
-                        if k > 0 and player.resources[0] < 2: continue # cannot afford other players resources
+                        if k > 0 and player.resources[0] < 1: continue  #still a hack
                         p_clone = deepcopy(p)
                         p_clone.xor_resources.pop(i)
                         shopping_list_clone = deepcopy(shopping_list)
@@ -83,7 +86,7 @@ class node():
             ######################
             neighbors = (deepcopy(west), deepcopy(east)) #make player objects copy be deepcopy by default.
             for k, neighbor in enumerate(neighbors):
-                if player.resources[0] < 2: break #player cannot buy.
+                if player.resources[0] < 1: break #player cannot buy.
                 for i, resource in enumerate( neighbor.resources ):
                     if i == 0: continue #cannot trade for gold (trading takes gold...)
                     if resource == 0: continue #player doesnt have that resource
@@ -106,6 +109,15 @@ class node():
                                 else:
                                     total -= s.resources + np.sum(s.xor_resources, dtype='int32',axis=0)
                             if max(total) > 0: continue
+
+
+                    modifier=2
+                    for idx, market in enumerate(self.discounted_resources[k]): 
+                      #direction and list of discounts
+                      if market[i]:
+                        self.discounted_resources[idx].pop(market)
+                        modifier = 1
+                        break #we also want to pop..
                     
                     new_node = node(shopping_list_clone, player, *neighbor_clone,\
                                  meta={"label":"Purchase " + ["west","east"][k] \
@@ -172,7 +184,6 @@ def str_options(options):
             _str += name  + "/"
     return _str[:-1]
             
-        
 
 def resource_helper(indicies):
     resource = [0] * 7
@@ -215,6 +226,7 @@ def can_trade(node):
     """
     Theoretical function that accepts a node and returns if the player can pay for the item or not.
     """
+    pass
     
 def add_nodes(graph, nodes): #graph object, then this list, tuple dictionary thing.
     """
