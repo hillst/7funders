@@ -1,0 +1,22 @@
+A lot has changed, overall we are trying to move to a CSP checker. It really cleans up a lot of the logic in the game. Resources can become symbolic abstract things, action generation gets outsourced to the solver, it makes cards easier to parse and deal with, allows for arbitrary growth/reduction of resources and random ways we can set the mup... its quite nice.
+
+The next steps are just fully integrating the CSP with the cards themselves.
+
+As I noted before we will need to implement all of the other card types as well.
+
+Moving away from whatever resource checker pos was:
+
+- CSP based solver (presumably in python?)
+-    Defining resources as abstract symbols for the CSP, there is a class for this
+-    Each card can generate a set of resources assocaited with it.
+-    A *resource* is:
+-        a unique instance of a card (each resource on a card can be used once)
+-        a resource type that can be satisfied ('ore' for instance), this is for our domains (sawmill assigns to wood)
+-    A *cost* is
+-        the numerical constraint based on the current players gold. any cost incured by using a resource must be lte the players gold
+
+- Setup a CSP for each card in the hand for each player
+- Generate a set of legal_actions from the result of the CSP 
+-   for instance, ore p2 cost2, ore p0 cost 
+-   should facilitate the transfer of gold and construction of the card as the action
+

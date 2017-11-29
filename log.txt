@@ -1,0 +1,588 @@
+setting up game...
+starting age loop
+Age:  I
+Card selection 1
+[32mScriptorium	1	Costs:	P		Tablet[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 1, 0] [0 0 0 0 0 0 1 0]
+[33mMarketplace	1	Costs:			PurchaseManufactured-LR[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[36mLoom	1	Costs:			Silk[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mBaths	1	Costs:	S		3VP[0m [3 1 1 1 1 1 0 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mWorkshop	1	Costs:	G		Gear[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[37mLumber Yard	1	Costs:			Wood[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[36mPress	1	Costs:			Paper[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pool	1	Costs:			Clay[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[33mEast Trading Post	1	Costs:			PurchaseNatural-R[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mTimber Yard	1	Costs:	$		Stone OR Wood[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[36mGlassworks	1	Costs:			Glass[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mBarracks	1	Costs:	S		1MP[0m [3 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 1 0 0 0 0 0]
+[32mApothecary	1	Costs:	S		Compass[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 1] [0 0 0 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [3 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[37mStone Pit	1	Costs:			Stone[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[33mWest Trading Post	1	Costs:			PurchaseNatural-L[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[33mMarketplace	1	Costs:			PurchaseManufactured-LR[0m
+Player0
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[33mEast Trading Post	1	Costs:			PurchaseNatural-R[0m
+Player1
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[36mGlassworks	1	Costs:			Glass[0m
+Player2
+Purchases: 0-0
+
+Card selection 2
+[32mScriptorium	1	Costs:	P		Tablet[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 1, 0] [0 0 0 0 0 0 1 0]
+[36mLoom	1	Costs:			Silk[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mBaths	1	Costs:	S		3VP[0m [3 1 1 1 1 1 0 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mWorkshop	1	Costs:	G		Gear[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[37mLumber Yard	1	Costs:			Wood[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[36mPress	1	Costs:			Paper[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pool	1	Costs:			Clay[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mTimber Yard	1	Costs:	$		Stone OR Wood[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mBarracks	1	Costs:	S		1MP[0m [3 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 1 0 0 0 0 0]
+[32mApothecary	1	Costs:	S		Compass[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 1] [0 0 0 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [3 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[37mStone Pit	1	Costs:			Stone[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[33mWest Trading Post	1	Costs:			PurchaseNatural-L[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+=======TRASH ACTION=======
+[32mScriptorium	1	Costs:	P		Tablet[0m
+Player0
+
+=======TRASH ACTION=======
+[36mPress	1	Costs:			Paper[0m
+Player1
+
+=======BUILD ACTION=======
+[32mApothecary	1	Costs:	S		Compass[0m
+Player2
+Purchases: 0-0
+
+Card selection 3
+[36mLoom	1	Costs:			Silk[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mBaths	1	Costs:	S		3VP[0m [3 1 1 1 1 1 0 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mWorkshop	1	Costs:	G		Gear[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[37mLumber Yard	1	Costs:			Wood[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pool	1	Costs:			Clay[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mTimber Yard	1	Costs:	$		Stone OR Wood[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mBarracks	1	Costs:	S		1MP[0m [3 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 1 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [3 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[37mStone Pit	1	Costs:			Stone[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[33mWest Trading Post	1	Costs:			PurchaseNatural-L[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+=======TRASH ACTION=======
+[32mWorkshop	1	Costs:	G		Gear[0m
+Player0
+
+=======BUILD ACTION=======
+[37mLumber Yard	1	Costs:			Wood[0m
+Player1
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[37mStone Pit	1	Costs:			Stone[0m
+Player2
+Purchases: 0-0
+
+Card selection 4
+[36mLoom	1	Costs:			Silk[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mBaths	1	Costs:	S		3VP[0m [3 1 1 1 1 1 0 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pool	1	Costs:			Clay[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mTimber Yard	1	Costs:	$		Stone OR Wood[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mBarracks	1	Costs:	S		1MP[0m [3 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 1 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [3 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[33mWest Trading Post	1	Costs:			PurchaseNatural-L[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[36mLoom	1	Costs:			Silk[0m
+Player0
+Purchases: 0-0
+
+=======TRASH ACTION=======
+[37mTimber Yard	1	Costs:	$		Stone OR Wood[0m
+Player1
+
+=======TRASH ACTION=======
+[33mWest Trading Post	1	Costs:			PurchaseNatural-L[0m
+Player2
+
+Card selection 5
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mBaths	1	Costs:	S		3VP[0m [3 1 1 1 1 1 0 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pool	1	Costs:			Clay[0m [3 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [3 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [3 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mBarracks	1	Costs:	S		1MP[0m [3 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 0, 0, 0] [0 0 1 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [3 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[34mBaths	1	Costs:	S		3VP[0m
+Player0
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[37mClay Pool	1	Costs:			Clay[0m
+Player1
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[31mBarracks	1	Costs:	S		1MP[0m
+Player2
+Purchases: 1-0
+
+Card selection 6
+[34mAltar	1	Costs:			2VP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mGuard Tower	1	Costs:	$		1MP[0m [4 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [4 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [2 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mStockade	1	Costs:	C		1MP[0m [2 0 0 0 0 1 1 1] [0, 1, 0, 0, 0, 0, 0, 0] [0 1 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[34mAltar	1	Costs:			2VP[0m
+Player0
+Purchases: 0-0
+
+=======TRASH ACTION=======
+[31mGuard Tower	1	Costs:	$		1MP[0m
+Player1
+
+=======BUILD ACTION=======
+[31mStockade	1	Costs:	C		1MP[0m
+Player2
+Purchases: 0-1
+
+Card selection 7
+[37mOre Vein	1	Costs:			Ore[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m [5 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTheater	1	Costs:			2VP[0m [1 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+=======TRASH ACTION=======
+[37mOre Vein	1	Costs:			Ore[0m
+Player0
+
+=======TRASH ACTION=======
+[37mClay Pit	1	Costs:	$		Clay OR Ore[0m
+Player1
+
+=======TRASH ACTION=======
+[34mTheater	1	Costs:			2VP[0m
+Player2
+
+Age:  II
+Card selection 1
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mPress	2	Costs:			Paper[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mLibrary	2	Costs:	SSS		Tablet[0m [3 1 1 1 1 1 0 1] [0, 0, 2, 0, 0, 0, 0, 1] [0 0 1 0 0 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [3 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[31mStables	2	Costs:	COW		2MP[0m [3 1 1 1 1 1 0 1] [0, 1, 0, 1, 1, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mArchery Range	2	Costs:	OWW		2MP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mLoom	2	Costs:			Silk[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m [5 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [5 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mCourthouse	2	Costs:	CCS		4VP[0m [5 1 1 1 0 0 0 0] [0, 2, 0, 0, 0, 0, 0, 1] [0 1 0 0 0 0 0 1]
+[37mClayyard	2	Costs:	$		Clay AND Clay[0m [5 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[36mGlassworks	2	Costs:			Glass[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mQuarry	2	Costs:	$		Stone AND Stone[0m [5 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [1 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [1 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+[32mLaboratory	2	Costs:	CCP		Gear[0m [1 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 1, 0] [0 2 0 0 0 0 0 0]
+[31mWalls	2	Costs:	CCC		2MP[0m [1 0 0 0 0 1 1 1] [0, 3, 0, 0, 0, 0, 0, 0] [0 3 0 0 0 0 0 0]
+[33mVineyard	2	Costs:			Natural-1G-LMR[0m [1 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAqueduct	2	Costs:	SSS		5VP[0m [1 0 0 0 0 1 1 1] [0, 0, 3, 0, 0, 0, 0, 0] [0 0 3 0 0 0 0 0]
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m [1 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 0, 0] [0 2 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[32mLibrary	2	Costs:	SSS		Tablet[0m
+Player0
+Purchases: 1-0
+
+=======TRASH ACTION=======
+[36mGlassworks	2	Costs:			Glass[0m
+Player1
+
+=======BUILD ACTION=======
+[32mLaboratory	2	Costs:	CCP		Gear[0m
+Player2
+Purchases: 0-1
+
+Card selection 2
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mPress	2	Costs:			Paper[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [2 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[31mStables	2	Costs:	COW		2MP[0m [2 1 1 1 1 1 0 1] [0, 1, 0, 1, 1, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mArchery Range	2	Costs:	OWW		2MP[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mLoom	2	Costs:			Silk[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [7 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mCourthouse	2	Costs:	CCS		4VP[0m [7 1 1 1 0 0 0 0] [0, 2, 0, 0, 0, 0, 0, 1] [0 1 0 0 0 0 0 1]
+[37mClayyard	2	Costs:	$		Clay AND Clay[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mQuarry	2	Costs:	$		Stone AND Stone[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+[31mWalls	2	Costs:	CCC		2MP[0m [0 0 0 0 0 1 1 1] [0, 3, 0, 0, 0, 0, 0, 0] [0 3 0 0 0 0 0 0]
+[33mVineyard	2	Costs:			Natural-1G-LMR[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAqueduct	2	Costs:	SSS		5VP[0m [0 0 0 0 0 1 1 1] [0, 0, 3, 0, 0, 0, 0, 0] [0 0 3 0 0 0 0 0]
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m [0 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 0, 0] [0 2 0 0 0 0 0 0]
+=======TRASH ACTION=======
+[36mLoom	2	Costs:			Silk[0m
+Player0
+
+=======BUILD ACTION=======
+[37mClayyard	2	Costs:	$		Clay AND Clay[0m
+Player1
+Purchases: 0-0
+
+=======TRASH ACTION=======
+[31mWalls	2	Costs:	CCC		2MP[0m
+Player2
+
+Card selection 3
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mPress	2	Costs:			Paper[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [2 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[31mStables	2	Costs:	COW		2MP[0m [2 1 1 1 1 1 0 1] [0, 1, 0, 1, 1, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[31mArchery Range	2	Costs:	OWW		2MP[0m [2 1 1 1 1 1 0 1] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [7 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mCourthouse	2	Costs:	CCS		4VP[0m [7 1 1 1 0 0 0 0] [0, 2, 0, 0, 0, 0, 0, 1] [0 1 0 0 0 0 0 1]
+[37mQuarry	2	Costs:	$		Stone AND Stone[0m [7 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+[33mVineyard	2	Costs:			Natural-1G-LMR[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mAqueduct	2	Costs:	SSS		5VP[0m [0 0 0 0 0 1 1 1] [0, 0, 3, 0, 0, 0, 0, 0] [0 0 3 0 0 0 0 0]
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m [0 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 0, 0] [0 2 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[31mStables	2	Costs:	COW		2MP[0m
+Player0
+Purchases: 0-0
+
+=======BUILD ACTION=======
+[34mCourthouse	2	Costs:	CCS		4VP[0m
+Player1
+Purchases: 0-1
+
+=======TRASH ACTION=======
+[34mAqueduct	2	Costs:	SSS		5VP[0m
+Player2
+
+Card selection 4
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mPress	2	Costs:			Paper[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [3 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[31mArchery Range	2	Costs:	OWW		2MP[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mQuarry	2	Costs:	$		Stone AND Stone[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+[33mVineyard	2	Costs:			Natural-1G-LMR[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m [0 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 0, 0] [0 2 0 0 0 0 0 0]
+=======TRASH ACTION=======
+[31mArchery Range	2	Costs:	OWW		2MP[0m
+Player0
+
+=======TRASH ACTION=======
+[37mQuarry	2	Costs:	$		Stone AND Stone[0m
+Player1
+
+=======TRASH ACTION=======
+[33mVineyard	2	Costs:			Natural-1G-LMR[0m
+Player2
+
+Card selection 5
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[36mPress	2	Costs:			Paper[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [3 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m [0 0 0 0 0 1 1 1] [0, 2, 0, 0, 0, 0, 0, 0] [0 2 0 0 0 0 0 0]
+=======BUILD ACTION=======
+[36mPress	2	Costs:			Paper[0m
+Player0
+Purchases: 0-0
+
+=======TRASH ACTION=======
+[37mSawmill	2	Costs:	$		Wood AND Wood[0m
+Player1
+
+=======TRASH ACTION=======
+[33mForum	2	Costs:	CC	East Trading Post-West Trading Post	Manufactured[0m
+Player2
+
+Card selection 6
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[34mTemple	2	Costs:	COG		3VP[0m [3 1 1 1 1 1 0 1] [0, 1, 0, 1, 0, 1, 0, 0] [0 0 0 0 0 0 0 0]
+[32mSchool	2	Costs:	WP		Tablet[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 0] [0 0 0 0 1 0 1 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[32mDispensary	2	Costs:	OOG		Compas[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 0] [0 0 0 2 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+=======TRASH ACTION=======
+[34mTemple	2	Costs:	COG		3VP[0m
+Player0
+
+=======TRASH ACTION=======
+[32mSchool	2	Costs:	WP		Tablet[0m
+Player1
+
+=======TRASH ACTION=======
+[32mDispensary	2	Costs:	OOG		Compas[0m
+Player2
+
+Card selection 7
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m [3 1 1 1 1 1 0 1] [0, 0, 0, 0, 2, 0, 0, 0] [0 0 0 0 1 0 0 0]
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m [6 1 1 1 0 0 0 0] [1, 0, 0, 0, 0, 0, 0, 0] [0 0 0 0 0 0 0 0]
+[34mStatue	2	Costs:	OOW		4VP[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 1, 0, 0, 0] [0 0 0 2 1 0 0 0]
+=======TRASH ACTION=======
+[33mCaravansery	2	Costs:	WW	Marketplace	Natural[0m
+Player0
+
+=======BUILD ACTION=======
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m
+Player1
+Purchases: 0-0
+
+=======TRASH ACTION=======
+[34mStatue	2	Costs:	OOW		4VP[0m
+Player2
+
+Age:  III
+Card selection 1
+[34mGardens	3	Costs:	CCW		5VP[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 1, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[34mPalace	3	Costs:	CSOWGPS		8VP[0m [3 1 1 1 1 1 0 1] [0, 1, 1, 1, 1, 1, 1, 1] [0 0 0 0 0 0 1 0]
+[32mAcademy	3	Costs:	SSSG		Compass[0m [3 1 1 1 1 1 0 1] [0, 0, 3, 0, 0, 1, 0, 0] [0 0 2 0 0 0 0 0]
+[32mLodge	3	Costs:	CCPS		Compass[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m [3 1 1 1 1 1 0 1] [0, 2, 2, 0, 0, 1, 0, 0] [0 1 1 0 0 0 0 0]
+[34mPantheon	3	Costs:	CCOGPS		7VP[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 1, 0, 1, 1, 1] [0 1 0 0 0 0 1 0]
+[34mSenate	3	Costs:	SOWW		6VP[0m [6 1 1 1 0 0 0 0] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[31mSiege Workshop	3	Costs:	CCCW		3MP[0m [6 1 1 1 0 0 0 0] [0, 3, 0, 0, 1, 0, 0, 0] [0 2 0 0 1 0 0 0]
+[32mStudy	3	Costs:	WPS		Gear[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 1, 0, 1, 1] [0 0 0 0 1 0 1 1]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [6 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[31mFortifications	3	Costs:	SOOO		3MP[0m [6 1 1 1 0 0 0 0] [0, 0, 1, 3, 0, 0, 0, 0] [0 0 0 2 0 0 0 0]
+[34mTown Hall	3	Costs:	SSOG		6VP[0m [0 0 0 0 0 1 1 1] [0, 0, 2, 1, 0, 1, 0, 0] [0 0 2 1 0 0 0 0]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mHaven	3	Costs:	OWS		Natural-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 1, 1, 0, 0, 1] [0 0 0 1 1 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+[31mArsenal	3	Costs:	SOWW		3MP[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 1 1 2 0 0 0]
+[32mObservatory	3	Costs:	OOGS		Gear[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 1] [0 0 0 2 0 0 0 0]
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 3, 1, 1, 0] [0 0 0 0 3 0 0 0]
+=======TRASH ACTION=======
+[34mPalace	3	Costs:	CSOWGPS		8VP[0m
+Player0
+
+=======TRASH ACTION=======
+[32mStudy	3	Costs:	WPS		Gear[0m
+Player1
+
+=======TRASH ACTION=======
+[34mTown Hall	3	Costs:	SSOG		6VP[0m
+Player2
+
+Card selection 2
+[34mGardens	3	Costs:	CCW		5VP[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 1, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[32mAcademy	3	Costs:	SSSG		Compass[0m [3 1 1 1 1 1 0 1] [0, 0, 3, 0, 0, 1, 0, 0] [0 0 2 0 0 0 0 0]
+[32mLodge	3	Costs:	CCPS		Compass[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m [3 1 1 1 1 1 0 1] [0, 2, 2, 0, 0, 1, 0, 0] [0 1 1 0 0 0 0 0]
+[34mPantheon	3	Costs:	CCOGPS		7VP[0m [3 1 1 1 1 1 0 1] [0, 2, 0, 1, 0, 1, 1, 1] [0 1 0 0 0 0 1 0]
+[34mSenate	3	Costs:	SOWW		6VP[0m [6 1 1 1 0 0 0 0] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m [6 1 1 1 0 0 0 0] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[31mSiege Workshop	3	Costs:	CCCW		3MP[0m [6 1 1 1 0 0 0 0] [0, 3, 0, 0, 1, 0, 0, 0] [0 2 0 0 1 0 0 0]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [6 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[31mFortifications	3	Costs:	SOOO		3MP[0m [6 1 1 1 0 0 0 0] [0, 0, 1, 3, 0, 0, 0, 0] [0 0 0 2 0 0 0 0]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mHaven	3	Costs:	OWS		Natural-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 1, 1, 0, 0, 1] [0 0 0 1 1 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+[31mArsenal	3	Costs:	SOWW		3MP[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 1 1 2 0 0 0]
+[32mObservatory	3	Costs:	OOGS		Gear[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 1] [0 0 0 2 0 0 0 0]
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 3, 1, 1, 0] [0 0 0 0 3 0 0 0]
+=======TRASH ACTION=======
+[32mAcademy	3	Costs:	SSSG		Compass[0m
+Player0
+
+=======BUILD ACTION=======
+[34mSenate	3	Costs:	SOWW		6VP[0m
+Player1
+Purchases: 0-1
+
+=======TRASH ACTION=======
+[33mHaven	3	Costs:	OWS		Natural-1G;1VP-M[0m
+Player2
+
+Card selection 3
+[34mGardens	3	Costs:	CCW		5VP[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 1, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[32mLodge	3	Costs:	CCPS		Compass[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m [4 1 1 1 1 1 0 1] [0, 2, 2, 0, 0, 1, 0, 0] [0 1 1 0 0 0 0 0]
+[34mPantheon	3	Costs:	CCOGPS		7VP[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 1, 0, 1, 1, 1] [0 1 0 0 0 0 1 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[31mSiege Workshop	3	Costs:	CCCW		3MP[0m [5 1 1 1 0 0 0 0] [0, 3, 0, 0, 1, 0, 0, 0] [0 2 0 0 1 0 0 0]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [5 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[31mFortifications	3	Costs:	SOOO		3MP[0m [5 1 1 1 0 0 0 0] [0, 0, 1, 3, 0, 0, 0, 0] [0 0 0 2 0 0 0 0]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+[31mArsenal	3	Costs:	SOWW		3MP[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 1 1 2 0 0 0]
+[32mObservatory	3	Costs:	OOGS		Gear[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 2, 0, 1, 0, 1] [0 0 0 2 0 0 0 0]
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 3, 1, 1, 0] [0 0 0 0 3 0 0 0]
+=======TRASH ACTION=======
+[34mPantheon	3	Costs:	CCOGPS		7VP[0m
+Player0
+
+=======TRASH ACTION=======
+[31mSiege Workshop	3	Costs:	CCCW		3MP[0m
+Player1
+
+=======TRASH ACTION=======
+[32mObservatory	3	Costs:	OOGS		Gear[0m
+Player2
+
+Card selection 4
+[34mGardens	3	Costs:	CCW		5VP[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 1, 0, 0, 0] [0 1 0 0 0 0 0 0]
+[32mLodge	3	Costs:	CCPS		Compass[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m [4 1 1 1 1 1 0 1] [0, 2, 2, 0, 0, 1, 0, 0] [0 1 1 0 0 0 0 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [5 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[31mFortifications	3	Costs:	SOOO		3MP[0m [5 1 1 1 0 0 0 0] [0, 0, 1, 3, 0, 0, 0, 0] [0 0 0 2 0 0 0 0]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+[31mArsenal	3	Costs:	SOWW		3MP[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 1, 2, 0, 0, 0] [0 0 1 1 2 0 0 0]
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 3, 1, 1, 0] [0 0 0 0 3 0 0 0]
+=======TRASH ACTION=======
+[34mGardens	3	Costs:	CCW		5VP[0m
+Player0
+
+=======TRASH ACTION=======
+[31mFortifications	3	Costs:	SOOO		3MP[0m
+Player1
+
+=======TRASH ACTION=======
+[31mArsenal	3	Costs:	SOWW		3MP[0m
+Player2
+
+Card selection 5
+[32mLodge	3	Costs:	CCPS		Compass[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [4 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m [4 1 1 1 1 1 0 1] [0, 2, 2, 0, 0, 1, 0, 0] [0 1 1 0 0 0 0 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m [5 1 1 1 0 0 0 0] [0, 0, 0, 1, 2, 0, 0, 0] [0 0 0 0 2 0 0 0]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [5 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 0, 0, 3, 1, 1, 0] [0 0 0 0 3 0 0 0]
+=======TRASH ACTION=======
+[35mBuilders Guild	3	Costs:	CCSSG		Wonder-1VP-LMR[0m
+Player0
+
+=======BUILD ACTION=======
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m
+Player1
+Purchases: 0-1
+
+=======TRASH ACTION=======
+[35mShipowners Guild	3	Costs:	WWWGP		Natural|Manufactured|Guild-1VP-M[0m
+Player2
+
+Card selection 6
+[32mLodge	3	Costs:	CCPS		Compass[0m [5 1 1 1 1 1 0 1] [0, 2, 0, 0, 0, 0, 1, 1] [0 1 0 0 0 0 1 0]
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [5 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [4 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m [4 1 1 1 0 0 0 0] [0, 1, 0, 0, 3, 0, 0, 1] [0 0 0 0 3 0 0 1]
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 2, 0, 0, 0, 1] [0 0 1 2 0 0 0 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+=======TRASH ACTION=======
+[32mLodge	3	Costs:	CCPS		Compass[0m
+Player0
+
+=======TRASH ACTION=======
+[35mMagistrates Guild	3	Costs:	CWWWS		Civilian-1VP-LR[0m
+Player1
+
+=======TRASH ACTION=======
+[35mStrategy Guild	3	Costs:	SOOS		LossBell-1VP-LR[0m
+Player2
+
+Card selection 7
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m [5 1 1 1 1 1 0 1] [0, 2, 0, 0, 2, 0, 1, 0] [0 1 0 0 1 0 1 0]
+[32mUniversity	3	Costs:	WWGP		Tablet[0m [4 1 1 1 0 0 0 0] [0, 0, 0, 0, 2, 1, 1, 0] [0 0 0 0 2 1 1 0]
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m [0 0 0 0 0 1 1 1] [0, 0, 1, 0, 0, 1, 0, 0] [0 0 1 0 0 0 0 0]
+=======TRASH ACTION=======
+[35mScientists Guild	3	Costs:	CCWWP		Compass|Gear|Tablet[0m
+Player0
+
+=======TRASH ACTION=======
+[32mUniversity	3	Costs:	WWGP		Tablet[0m
+Player1
+
+=======TRASH ACTION=======
+[33mLighthouse	3	Costs:	SG		Commerce-1G;1VP-M[0m
+Player2
+
+Player1
+Gold:5
+Resources:brick	stone	ore	wood	glass	paper	silk
+	1	1	1	1	1	0	1
+Structures:
+[32mLibrary	2	Costs:	SSS		Tablet[0m
+[31mStables	2	Costs:	COW		2MP[0m
+[36mLoom	1	Costs:			Silk[0m
+[36mPress	2	Costs:			Paper[0m
+[33mMarketplace	1	Costs:			PurchaseManufactured-LR[0m
+[34mBaths	1	Costs:	S		3VP[0m
+[34mAltar	1	Costs:			2VP[0m
+Player2
+Gold:4
+Resources:brick	stone	ore	wood	glass	paper	silk
+	1	1	1	0	0	0	0
+Structures:
+[37mLumber Yard	1	Costs:			Wood[0m
+[37mClay Pool	1	Costs:			Clay[0m
+[37mClayyard	2	Costs:	$		Clay AND Clay[0m
+[37mFoundry	2	Costs:	$		Ore AND Ore[0m
+[33mEast Trading Post	1	Costs:			PurchaseNatural-R[0m
+[33mArena	3	Costs:	OWW		Wonder-3G;1VP-M[0m
+[34mCourthouse	2	Costs:	CCS		4VP[0m
+[34mSenate	3	Costs:	SOWW		6VP[0m
+Player3
+Gold:0
+Resources:brick	stone	ore	wood	glass	paper	silk
+	0	0	0	0	1	1	1
+Structures:
+[32mApothecary	1	Costs:	S		Compass[0m
+[32mLaboratory	2	Costs:	CCP		Gear[0m
+[37mStone Pit	1	Costs:			Stone[0m
+[31mBarracks	1	Costs:	S		1MP[0m
+[31mStockade	1	Costs:	C		1MP[0m
+[36mGlassworks	1	Costs:			Glass[0m
+game over

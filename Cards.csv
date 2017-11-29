@@ -80,7 +80,7 @@ Vineyard,Commerce,2,0,0,0,0,0,0,0,0,Natural-1G-LMR,,3-6,
 Bazar,Commerce,2,0,0,0,0,0,0,0,0,Manufactured-2G-LMR,,4-7,
 
 #Age 2 Science cards
-Dispensary,Science,2,0,0,0,2,0,1,0,0,Compas,,3-4,
+Dispensary,Science,2,0,0,0,2,0,1,0,0,Compass,,3-4,
 Laboratory,Science,2,0,2,0,0,0,0,1,0,Gear,,3-5,
 Library,Science,2,0,0,2,0,0,0,0,1,Tablet,,3-6,
 School,Science,2,0,0,0,0,1,0,1,0,Tablet,,3-7,

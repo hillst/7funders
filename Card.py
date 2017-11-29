@@ -43,11 +43,12 @@ class Card():
                   "Commerce":"yellow"}[self.cardtype]
 
 
-    def __init__(self, name, cardtype, age, costs, card_text, upgrades, players, meta=""):
+    def __init__(self, name, cardtype, age, costs, card_text, upgrades, players, gold_cost=0,meta=""):
         self.name = name
         self.cardtype=cardtype
         self.age=age
         self.costs=costs
+        self.gold_cost = gold_cost
         self.card_text=card_text
         self.upgrades=upgrades
         self.players = players
@@ -173,24 +174,32 @@ class CommerceMarketCard(CommerceCard):
        
 
     def on_build(self, player):
+        
+        if self.purchase_what == "Manufactured":
+            if "L" == self.purchase_from:
+              player.west_manufactured=True
+              player.west_manufactured=True
+            elif "R" == self.purchase_from:
+              player.east_manufactured=True
+              player.east_manufactured=True
+            elif "LR" == self.purchase_from:
+              player.west_manufactured=True
+              player.west_manufactured=True
+              player.east_manufactured=True
+              player.east_manufactured=True
 
-        zeroes = [0,0,0,0, 0,0,0,0] 
         if self.purchase_what == "Natural":
-          to_add = [0,1,1,1, 1,0,0,0]
-        elif self.purchase_what == "Manufactured":
-          to_add = [0,0,0,0, 0,1,1,1]
-        else:
-          raise Exception("Trying to build invalid market type. This should not happen so please dont")
-        #so there is a case where we have both
-        if "L" == self.purchase_from:
-          player.discounted_resources[0].append(to_add) 
-          player.discounted_resources[0].append(zeroes)
-        elif "R" == self.purchase_from:
-          player.discounted_resources[1].append(to_add)
-          player.discounted_resources[1].append(zeroes)
-        elif "LR" == self.purchase_from:
-          player.discounted_resources[0].append(to_add)
-          player.discounted_resources[1].append(to_add)
+            if "L" == self.purchase_from:
+              player.west_natural=True
+              player.west_natural=True
+            elif "R" == self.purchase_from:
+              player.east_natural=True
+              player.east_natural=True
+            elif "LR" == self.purchase_from:
+              player.west_natural=True
+              player.west_natural=True
+              player.east_natural=True
+              player.east_natural=True
 
     def deepcopy(self):
         copy_costs = deepcopy(self.costs)
@@ -242,28 +251,34 @@ class NaturalCard(Card):
     def __init__(self, **kwargs):
         Card.__init__(self, **kwargs)
         parsed = self.card_text.split(" ")
+        
 
     def on_build(self, player):
-        #how do we define that weird or relationship
         """ 
         Stone OR Wood, Stone AND Stone, Stone
         """
         arr = self.card_text.split(" ")
-        to_add = [0,0,0,0 ,0,0,0,0]
-        if len(arr) > 1:
-          boolean = arr[1]
-          res = (arr[0].lower(), arr[2].lower())
-          to_add[resource_to_int[res[0]]] += 1
-          to_add[resource_to_int[res[1]]] += 1
-        else:
-          boolean = None
-          to_add[resource_to_int[arr[0].lower()]] += 1
+        resource_strings = [arr[0], arr[1]] #this logic sucks, we want to support arbitrary growth
+        boolean = arr[1]
+        self.resource_strings = resource_strings
+        self.boolean = boolean 
 
-        to_add = np.asarray(to_add)
-        if boolean == "OR":
-          player.xor_resources.append(to_add)
-        else:
-          player.resources += to_add
+    def make_resources(self, player, value=0):
+        """
+        This is a wrapper function for generating resources with different values, ie, those for purchasing vs those owned
+      
+        returns: List of resources with fixed value
+        """
+        resources = []
+        for i, resource in enumerate(self.resource_strings):
+          if boolean == "AND":
+            name = "%s-%i" % (resource, i)
+          else:
+            name = self.name
+        resources.append(Resource(name, resource_value=resource, owner=player, value=cost))
+
+        return resources
+     
     
     def deepcopy(self):
         """

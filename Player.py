@@ -18,60 +18,28 @@ class Player():
           self.structures = []
        
         self.name = name
-        self.wonders = None # not implemented yet
+        self.wonders = None 
+        player.west_natural= False
+        player.west_manufactured = False
+        player.east_natural= False
+        player.east_manufactured= False
+
         if current_hand == None:
           self.current_hand = None
         else:
           self.current_hand = current_hand #I dont know if we need this
         self.starting_gold = starting_gold
-
-        if discounted_resources == None:
-          self.discounted_resources = [[],[]] #list of west,east 
-        else:
-          self.discounted_resources = discounted_resources
-
-        if xor_resources == None:
-          self.xor_resources = []
-        else:
-          self.xor_resources = xor_resources
-
-        if resources == "rand":
-          self._rand_resources()
-        else: 
-          self.resources = np.asarray(resources, dtype='int32') #7,1 vector, i feel like this should be computable too.
-        self.resources[0] = self.starting_gold
-        self.xor_resources=[np.asarray(r, dtype='int32') for r in self.xor_resources]
-  
-    
-    def _rand_resources(self):
-        import random
-        resources = [self.starting_gold] 
-        for i in range(1,8):
-            if random.random() > .5:
-                resources.append(1)
-            else:
-                resources.append(0)    
-        self.resources = np.asarray(resources , dtype='int32')
-
     
     def __copy__(self):
-        res = deepcopy(self.resources)
-        xor = deepcopy(self.xor_resources)
         current_hand = deepcopy(self.current_hand)
         structures = deepcopy(self.structures)
-        discounted_resources = deepcopy(self.discounted_resources)
-        return Player(self.name, res, xor, current_hand, structures, discounted_resources = discounted_resources)
+        return Player(self.name, ,  current_hand, structures)
 
     def __deepcopy__(self, memo):
         return self.__copy__()
 
     def __str__(self):
         #this could be much prettier.
-        return (self.name + "\nGold:" + str(self.resources[0]) + 
-                            "\nResources:" + "\t".join(names) + 
-                            "\n\t" + "\t".join( map(str,self.resources[1:])) +
-                            "\nMarkets:" + "\t".join(names) + 
-                            "\n\t"+"Left:\t".join( map(str,self.discounted_resources[0][1:]))+
-                            "\n\t"+"Right:\t".join( map(str,self.discounted_resources[1][1:])))
+        return (self.name + "\nGold:" + str(self.resources[0]) )
     
 
